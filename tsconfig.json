@@ -12,6 +12,7 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
+    "declarationDir": "types",
     "emitDeclarationOnly": true,
     "lib": ["ES2015", "DOM"],
     "types": ["node"]
