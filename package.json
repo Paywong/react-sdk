@@ -9,7 +9,7 @@
     "build": "parcel build",
     "publish:patch": "npm version patch && npm run build && npm publish"
   },
-  "source": "src/index.js",
+  "source": "src/index.ts",
   "main": "dist/main.js",
   "author": "Paywong",
   "license": "ISC",
