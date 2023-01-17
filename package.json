@@ -1,6 +1,9 @@
 {
-  "name": "paywong-react-sdk",
-  "version": "1.0.0",
+  "name": "@paywong/react",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/paywong"
+  },
+  "version": "1.0.1",
   "description": "Paywong's software development kit for ReactJs",
   "scripts": {
     "rollup": "rollup -c"
