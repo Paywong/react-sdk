@@ -7,7 +7,7 @@
   "description": "Paywong's software development kit for ReactJs",
   "scripts": {
     "build": "parcel build",
-    "publish:patch": "npm run rollup && npm version patch && npm publish"
+    "publish:patch": "npm run build && npm version patch && npm publish"
   },
   "author": "Paywong",
   "license": "ISC",
