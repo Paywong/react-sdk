@@ -17,6 +17,8 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true,
-    "lib": ["ES2015", "DOM"]
-  }
+    "lib": ["ES2015", "DOM"],
+    "baseUrl": "./src"
+  },
+  "include": ["src"]
 }
