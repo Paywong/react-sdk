@@ -114829,13 +114829,13 @@ var GRAPHQL_ENDPOINT_PRODUCTION = 'https://api.paywong.com/v1/graphql';
 var GRAPHQL_ENDPOINT_STAGING = 'https://api.staging.paywong.com/v1/graphql';
 var GRAPHQL_ENDPOINT_SANDBOX = 'https://api.sandbox.paywong.com/v1/graphql';
 
-var PaywongEnvironment;
+exports.PaywongEnvironment = void 0;
 (function (PaywongEnvironment) {
     PaywongEnvironment["DEVELOPMENT"] = "DEVELOPMENT";
     PaywongEnvironment["STAGING"] = "STAGING";
     PaywongEnvironment["SANDBOX"] = "SANDBOX";
     PaywongEnvironment["PRODUCTION"] = "PRODUCTION";
-})(PaywongEnvironment || (PaywongEnvironment = {}));
+})(exports.PaywongEnvironment || (exports.PaywongEnvironment = {}));
 
 var createPayment = function (token, environment, amount, items, paymentOptions, receiverAddresses) { return __awaiter$1(void 0, void 0, void 0, function () {
     var endpoint, graphQLClient, mutation, variables, data, error_1;
@@ -114843,9 +114843,9 @@ var createPayment = function (token, environment, amount, items, paymentOptions,
         switch (_a.label) {
             case 0:
                 endpoint = GRAPHQL_ENDPOINT_STAGING;
-                if (environment === PaywongEnvironment.SANDBOX)
+                if (environment === exports.PaywongEnvironment.SANDBOX)
                     endpoint = GRAPHQL_ENDPOINT_SANDBOX;
-                if (environment === PaywongEnvironment.PRODUCTION)
+                if (environment === exports.PaywongEnvironment.PRODUCTION)
                     endpoint = GRAPHQL_ENDPOINT_PRODUCTION;
                 graphQLClient = new dist.GraphQLClient(endpoint, {
                     headers: {
@@ -114886,7 +114886,7 @@ var createPayment = function (token, environment, amount, items, paymentOptions,
 var templateObject_1;
 
 var PaywongButton = function (_a) {
-    var amount = _a.amount, items = _a.items, paymentOptions = _a.paymentOptions, receiverAddresses = _a.receiverAddresses, _b = _a.environment, environment = _b === void 0 ? PaywongEnvironment.SANDBOX : _b;
+    var amount = _a.amount, items = _a.items, paymentOptions = _a.paymentOptions, receiverAddresses = _a.receiverAddresses, _b = _a.environment, environment = _b === void 0 ? exports.PaywongEnvironment.SANDBOX : _b;
     var token = process.env.REACT_APP_PAYWONG_PUBLIC_TOKEN;
     var handleCreatePayment = function () { return __awaiter$1(void 0, void 0, void 0, function () {
         var request;
