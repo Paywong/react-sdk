@@ -1,6 +1,7 @@
 import React from 'react';
 import { createPayment } from '../../services/graphql';
 import { PaywongEnvironment, IPaywongButton } from '../../types';
+import PaywongLogo from '../PaywongLogo';
 
 const PaywongButton = ({
   amount,
@@ -27,7 +28,16 @@ const PaywongButton = ({
     }
   };
 
-  const style = {
+  const containerStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    fontFamily: 'Inter',
+    gap: '6px',
+    ...buttonOptions?.containerStyle,
+  };
+
+  const buttonStyle = {
     fontWeight: '500',
     padding: '10px 24px',
     lineHeight: '0',
@@ -40,18 +50,35 @@ const PaywongButton = ({
     background: '#4b4efc',
     color: '#ffff',
     display: 'flex',
-    aligntems: 'center',
+    alignItems: 'center',
     justifyContent: 'center',
     width: '230px',
     height: '48px',
-    fontFamily: 'inter',
-    ...buttonOptions?.style,
+    ...buttonOptions?.buttonStyle,
+  };
+
+  const PaywongTagStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '8px',
+    fontSize: '12px',
+    color: '#9ca3af',
   };
 
   return (
-    <button style={style} disabled={!token} onClick={handleCreatePayment}>
-      {buttonOptions?.text ? buttonOptions?.text : 'Pay with Crypto'}
-    </button>
+    <div style={containerStyle}>
+      <button
+        style={buttonStyle}
+        disabled={!token}
+        onClick={handleCreatePayment}
+      >
+        {buttonOptions?.text ? buttonOptions?.text : 'Pay with Crypto'}
+      </button>
+      <div style={PaywongTagStyle}>
+        <p>Powered by</p>
+        <PaywongLogo />
+      </div>
+    </div>
   );
 };
 

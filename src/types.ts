@@ -42,7 +42,8 @@ export enum PaywongEnvironment {
 }
 
 export interface ButtonOptions {
-  style?: any;
+  buttonStyle?: any;
+  containerStyle?: any;
   text?: string;
 }
 
