@@ -24,6 +24,7 @@
   },
   "types": "dist/types.d.ts",
   "dependencies": {
+    "@fontsource/inter": "^4.5.14",
     "graphql-request": "^5.1.0",
     "react": "^17.0.2",
     "tslib": "^2.4.1"

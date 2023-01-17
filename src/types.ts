@@ -41,10 +41,16 @@ export enum PaywongEnvironment {
   PRODUCTION = 'production',
 }
 
+export interface ButtonOptions {
+  style?: any;
+  text?: string;
+}
+
 export interface IPaywongButton {
   amount: AmountInput;
   items?: PaymentItemInput[];
   paymentOptions?: PaymentOptionsInput;
   receiverAddresses?: ReceiverAddressesInput[];
   environment: PaywongEnvironment | undefined;
+  buttonOptions?: ButtonOptions;
 }
