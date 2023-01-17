@@ -35,10 +35,10 @@ export interface ReceiverAddressesInput {
 }
 
 export enum PaywongEnvironment {
-  DEVELOPMENT = 'DEVELOPMENT',
-  STAGING = 'STAGING',
-  SANDBOX = 'SANDBOX',
-  PRODUCTION = 'PRODUCTION',
+  DEVELOPMENT = 'development',
+  STAGING = 'staging',
+  SANDBOX = 'sandox',
+  PRODUCTION = 'production',
 }
 
 export interface IPaywongButton {
