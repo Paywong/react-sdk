@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/paywong"
   },
-  "version": "1.0.26",
+  "version": "1.0.27",
   "type": "module",
   "description": "Paywong's software development kit for ReactJs",
   "scripts": {
