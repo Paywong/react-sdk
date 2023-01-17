@@ -14,12 +14,16 @@ const PaywongButton = ({
   const token = process.env.REACT_APP_PAYWONG_PUBLIC_KEY;
 
   const handleCreatePayment = async () => {
-    if (token)
+    if (!token) {
       console.error({
         error: 'Invalid Paywong public key',
         message:
           'Set your Paywong public key in your .env to REACT_APP_PAYWONG_PUBLIC_KEY',
       });
+
+      return;
+    }
+
     const request = await createPayment(
       token,
       environment,
