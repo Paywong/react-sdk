@@ -1,16 +1,17 @@
 import { GraphQLClient, gql } from 'graphql-request';
-import {
-  AmountInput,
-  PaymentItemInput,
-  PaymentOptionsInput,
-  PaywongEnvironment,
-  ReceiverAddressesInput,
-} from '../components/PaywongButton/PaywongButton';
+
 import {
   GRAPHQL_ENDPOINT_PRODUCTION,
   GRAPHQL_ENDPOINT_SANDBOX,
   GRAPHQL_ENDPOINT_STAGING,
 } from '../constants';
+import {
+  PaywongEnvironment,
+  AmountInput,
+  PaymentItemInput,
+  PaymentOptionsInput,
+  ReceiverAddressesInput,
+} from '../types';
 
 export const createPayment = async (
   token: string | undefined,

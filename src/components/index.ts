@@ -1,1 +1,1 @@
-export { default as Button } from './PaywongButton';
+export { default as PaywongButton } from './PaywongButton';

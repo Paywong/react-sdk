@@ -42,8 +42,9 @@ interface IPaywongButton {
     items?: PaymentItemInput[];
     paymentOptions?: PaymentOptionsInput;
     receiverAddresses?: ReceiverAddressesInput[];
-    environment: PaywongEnvironment;
+    environment?: PaywongEnvironment;
 }
+
 declare const PaywongButton: ({ amount, items, paymentOptions, receiverAddresses, environment, }: IPaywongButton) => JSX.Element;
 
-export { PaywongButton as Button };
+export { PaywongButton };

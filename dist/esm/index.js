@@ -114813,6 +114813,14 @@ var GRAPHQL_ENDPOINT_PRODUCTION = 'https://api.paywong.com/v1/graphql';
 var GRAPHQL_ENDPOINT_STAGING = 'https://api.staging.paywong.com/v1/graphql';
 var GRAPHQL_ENDPOINT_SANDBOX = 'https://api.sandbox.paywong.com/v1/graphql';
 
+var PaywongEnvironment;
+(function (PaywongEnvironment) {
+    PaywongEnvironment["DEVELOPMENT"] = "DEVELOPMENT";
+    PaywongEnvironment["STAGING"] = "STAGING";
+    PaywongEnvironment["SANDBOX"] = "SANDBOX";
+    PaywongEnvironment["PRODUCTION"] = "PRODUCTION";
+})(PaywongEnvironment || (PaywongEnvironment = {}));
+
 var createPayment = function (token, environment, amount, items, paymentOptions, receiverAddresses) { return __awaiter$1(void 0, void 0, void 0, function () {
     var endpoint, graphQLClient, mutation, variables, data, error_1;
     return __generator$1(this, function (_a) {
@@ -114861,13 +114869,6 @@ var createPayment = function (token, environment, amount, items, paymentOptions,
 }); };
 var templateObject_1;
 
-var PaywongEnvironment;
-(function (PaywongEnvironment) {
-    PaywongEnvironment["DEVELOPMENT"] = "DEVELOPMENT";
-    PaywongEnvironment["STAGING"] = "STAGING";
-    PaywongEnvironment["SANDBOX"] = "SANDBOX";
-    PaywongEnvironment["PRODUCTION"] = "PRODUCTION";
-})(PaywongEnvironment || (PaywongEnvironment = {}));
 var PaywongButton = function (_a) {
     var amount = _a.amount, items = _a.items, paymentOptions = _a.paymentOptions, receiverAddresses = _a.receiverAddresses, _b = _a.environment, environment = _b === void 0 ? PaywongEnvironment.SANDBOX : _b;
     var token = process.env.REACT_APP_PAYWONG_PUBLIC_TOKEN;
@@ -114889,5 +114890,5 @@ var PaywongButton = function (_a) {
     return (React.createElement("button", { disabled: !token, onClick: handleCreatePayment }, process.env.REACT_APP_PAYWONG_PUBLIC_TOKEN));
 };
 
-export { PaywongButton as Button };
+export { PaywongButton };
 //# sourceMappingURL=index.js.map

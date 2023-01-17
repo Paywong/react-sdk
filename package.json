@@ -27,6 +27,10 @@
     "dist"
   ],
   "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
+  "typescript": {
+    "definition": "dist/index.d.ts"
+  },
   "dependencies": {
     "@rollup/plugin-json": "^6.0.0",
     "graphql-request": "^5.1.0",
