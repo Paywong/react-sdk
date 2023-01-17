@@ -6,7 +6,8 @@
   "version": "1.0.2",
   "description": "Paywong's software development kit for ReactJs",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "publish:patch": "npm run rollup && npm version patch && npm publish"
   },
   "author": "Paywong",
   "license": "ISC",

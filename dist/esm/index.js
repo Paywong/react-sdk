@@ -2456,9 +2456,9 @@ if (process.env.NODE_ENV === 'production') {
 
 var React = react.exports;
 
-var Button = function (props) {
-    return React.createElement("button", null, props.label);
+var PaywongButton = function (props) {
+    return React.createElement("button", null, process.env.REACT_APP_PAYWONG_PUBLIC_TOKEN);
 };
 
-export { Button };
+export { PaywongButton as Button };
 //# sourceMappingURL=index.js.map

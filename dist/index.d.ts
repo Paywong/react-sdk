@@ -1,7 +1,7 @@
 /// <reference types="react" />
-interface ButtonProps {
+interface IPaywongButton {
     label: string;
 }
-declare const Button: (props: ButtonProps) => JSX.Element;
+declare const PaywongButton: (props: IPaywongButton) => JSX.Element;
 
-export { Button };
+export { PaywongButton as Button };
