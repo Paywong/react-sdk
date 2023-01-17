@@ -15,7 +15,7 @@ import {
 
 export const createPayment = async (
   token: string | undefined,
-  environment: string,
+  environment: PaywongEnvironment,
   amount: AmountInput,
   items?: PaymentItemInput[],
   paymentOptions?: PaymentOptionsInput,
