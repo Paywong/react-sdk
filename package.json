@@ -28,5 +28,8 @@
     "graphql-request": "^5.1.0",
     "react": "^17.0.2",
     "tslib": "^2.4.1"
+  },
+  "engines": {
+    "node": ">=12"
   }
 }

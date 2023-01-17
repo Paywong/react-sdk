@@ -31,7 +31,7 @@ const PaywongButton = ({
       <button disabled={!token} onClick={handleCreatePayment}>
         HELLO
       </button>
-      <h1>Your token {process.env.REACT_APP_PAYWONG_PUBLIC_TOKEN}</h1>
+      <h1>Your token {token}</h1>
     </div>
   );
 };
