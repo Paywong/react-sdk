@@ -1,1 +1,1 @@
-export * from './components';
+export { PaywongButton } from './components';
