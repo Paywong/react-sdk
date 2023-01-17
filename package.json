@@ -28,6 +28,7 @@
   ],
   "types": "dist/index.d.ts",
   "dependencies": {
+    "graphql-request": "^5.1.0",
     "tslib": "^2.4.1"
   }
 }
