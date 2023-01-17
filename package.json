@@ -4,7 +4,7 @@
     "registry": "https://npm.pkg.github.com/paywong"
   },
   "version": "1.0.21",
-  "type": "module",
+  "type": "commonjs",
   "description": "Paywong's software development kit for ReactJs",
   "scripts": {
     "build": "parcel build",

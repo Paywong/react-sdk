@@ -1,3 +1,1 @@
-import { PaywongButton } from './components';
-
-export { PaywongButton };
+export * from './components';
