@@ -12,9 +12,8 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
-    "declarationDir": "types",
     "emitDeclarationOnly": true,
-    "lib": ["ES2015"]
-  },
-  "exclude": ["node_modules", "**/*stories", "**/*types"]
+    "lib": ["ES2015", "DOM"],
+    "types": ["node"]
+  }
 }
