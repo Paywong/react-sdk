@@ -1,4 +1,3 @@
-/// <reference types="react" />
 interface AmountInput {
     currencyId: string;
     price: number;
