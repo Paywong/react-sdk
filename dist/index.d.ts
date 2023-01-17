@@ -47,4 +47,4 @@ interface IPaywongButton {
 
 declare const PaywongButton: ({ amount, items, paymentOptions, receiverAddresses, environment, }: IPaywongButton) => JSX.Element;
 
-export { AmountInput, IPaywongButton, PaymentItemInput, PaymentOptionsInput, PaywongButton, PaywongEnvironment, ReceiverAddressesInput };
+export { PaywongButton };

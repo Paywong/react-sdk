@@ -114890,5 +114890,5 @@ var PaywongButton = function (_a) {
     return (React.createElement("button", { disabled: !token, onClick: handleCreatePayment }, process.env.REACT_APP_PAYWONG_PUBLIC_TOKEN));
 };
 
-export { PaywongButton, PaywongEnvironment };
+export { PaywongButton };
 //# sourceMappingURL=index.js.map
