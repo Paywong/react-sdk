@@ -1,3 +1,5 @@
+import React from 'react';
+
 export interface AmountInput {
   currencyId: string;
   price: number;
@@ -42,8 +44,8 @@ export enum PaywongEnvironment {
 }
 
 export interface ButtonOptions {
-  buttonStyle?: any;
-  containerStyle?: any;
+  buttonStyle?: React.CSSProperties;
+  containerStyle?: React.CSSProperties;
   text?: string;
 }
 

@@ -38,16 +38,16 @@ const PaywongButton = ({
     }
   };
 
-  const containerStyle = {
+  const containerStyle: React.CSSProperties = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     fontFamily: 'Inter',
-    gap: '6px',
+    gap: '4px',
     ...buttonOptions?.containerStyle,
   };
 
-  const buttonStyle = {
+  const buttonStyle: React.CSSProperties = {
     fontWeight: '500',
     padding: '10px 24px',
     lineHeight: '0',
@@ -67,7 +67,7 @@ const PaywongButton = ({
     ...buttonOptions?.buttonStyle,
   };
 
-  const PaywongTagStyle = {
+  const PaywongTagStyle: React.CSSProperties = {
     display: 'flex',
     alignItems: 'center',
     gap: '8px',
