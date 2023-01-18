@@ -43,7 +43,7 @@ const PaywongButton = ({
     flexDirection: 'column',
     alignItems: 'center',
     fontFamily: 'Inter',
-    gap: '4px',
+    gap: '6px',
     ...buttonOptions?.containerStyle,
   };
 

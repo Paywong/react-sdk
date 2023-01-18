@@ -54,6 +54,6 @@ export interface IPaywongButton {
   items?: PaymentItemInput[];
   paymentOptions?: PaymentOptionsInput;
   receiverAddresses?: ReceiverAddressesInput[];
-  environment?: PaywongEnvironment;
+  environment?: PaywongEnvironment | undefined;
   buttonOptions?: ButtonOptions;
 }
