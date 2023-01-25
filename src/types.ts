@@ -2,7 +2,7 @@ import React from 'react';
 
 export interface AmountInput {
   currencyId: string;
-  price: number;
+  subTotal: number;
   discount?: number;
   insurance?: number;
   shipping?: number;
