@@ -19,7 +19,9 @@ export const createPayment = async (
   amount: AmountInput,
   items?: PaymentItemInput[],
   paymentOptions?: PaymentOptionsInput,
-  receiverAddresses?: ReceiverAddressesInput[]
+  receiverAddresses?: ReceiverAddressesInput[],
+  metadata?: JSON,
+  platformFeePercentage?: number
 ) => {
   let endpoint = GRAPHQL_ENDPOINT_STAGING;
   if (environment === PaywongEnvironment.SANDBOX)
@@ -39,6 +41,8 @@ export const createPayment = async (
       $items: [PaymentItemInput!]
       $paymentOptions: PaymentOptionsInput
       $receiverAddresses: [ReceiverAddressInput!]
+      $metadata: jsonb
+      $platformFeePercentage: number
     ) {
       createPayment(
         args: {
@@ -46,6 +50,8 @@ export const createPayment = async (
           paymentOptions: $paymentOptions
           receiverAddresses: $receiverAddresses
           items: $items
+          metadata: $metadata
+          platformFeePercentage: $platformFeePercentage
         }
       ) {
         paymentId
@@ -59,6 +65,8 @@ export const createPayment = async (
     paymentOptions,
     receiverAddresses,
     items,
+    metadata,
+    platformFeePercentage,
   };
 
   try {

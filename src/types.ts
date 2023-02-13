@@ -2,11 +2,12 @@ import React from 'react';
 
 export interface AmountInput {
   currencyId: string;
-  subtotal: number;
+  total: number;
   discount?: number;
   insurance?: number;
   shipping?: number;
   tax?: number;
+  subtotal?: number;
 }
 
 export interface PaymentItemInput {
@@ -19,7 +20,7 @@ export interface PaymentItemInput {
 }
 
 export interface PaymentOptionsInput {
-  allowedTokens: string[];
+  allowedTokens?: string[];
   cancelUrl?: string;
   isRequiredBilling?: boolean;
   isRequiredShippingAddress?: boolean;
@@ -56,4 +57,6 @@ export interface IPaywongButton {
   receiverAddresses?: ReceiverAddressesInput[];
   environment?: PaywongEnvironment | undefined;
   buttonOptions?: ButtonOptions;
+  metadata?: JSON;
+  platformFeePercentage?: number;
 }

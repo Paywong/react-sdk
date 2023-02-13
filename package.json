@@ -1,8 +1,5 @@
 {
-  "name": "@paywong/react",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/paywong"
-  },
+  "name": "paywong-react",
   "version": "1.0.57",
   "description": "Paywong's software development kit for ReactJs",
   "scripts": {

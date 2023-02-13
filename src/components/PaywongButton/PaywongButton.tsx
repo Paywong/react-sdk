@@ -7,6 +7,7 @@ const PaywongButton = ({
   amount,
   items,
   paymentOptions,
+  metadata,
   receiverAddresses,
   environment = PaywongEnvironment.PRODUCTION,
   buttonOptions,
@@ -30,7 +31,8 @@ const PaywongButton = ({
       amount,
       items,
       paymentOptions,
-      receiverAddresses
+      receiverAddresses,
+      metadata
     );
 
     if (request.success) {
