@@ -1,6 +1,6 @@
 {
   "name": "paywong-react",
-  "version": "1.0.57",
+  "version": "1.0.58",
   "description": "Paywong's software development kit for ReactJs",
   "scripts": {
     "build": "parcel build",
