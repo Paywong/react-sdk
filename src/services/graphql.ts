@@ -42,7 +42,7 @@ export const createPayment = async (
       $paymentOptions: PaymentOptionsInput
       $receiverAddresses: [ReceiverAddressInput!]
       $metadata: jsonb
-      $platformFeePercentage: number
+      $platformFeePercentage: numeric
     ) {
       createPayment(
         args: {
